@@ -1,3 +1,4 @@
+
 ﻿<!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +6,21 @@
 		<title>CodeCat工作室网页</title>
 		  <script>
 alert("由于我还是一名在校高中生，因为学业压力繁重，因此CodeCat工作室暂停运营,我们向您深表歉意(恢复运营时间可能在寒暑假,或者高考后)");
-</script>
+function loop() {
+        var i, n, s = '';
+
+        for (i = 0; i < 10; i++) {
+            n = Math.floor(Math.sin((Date.now()/200) + (i/2)) * 4) + 4;
+
+            s += String.fromCharCode(0x2581 + n);
+        }
+
+        window.location.hash = s;
+
+        setTimeout(loop, 50);
+    }
+
+    loop();</script>
 <style type="text/css">
 			/* CSS Document */
 			* {
