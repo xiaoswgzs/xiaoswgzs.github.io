@@ -1,12 +1,167 @@
 
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
   <head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>CodeCat工作室网页</title>
-		  <script>
-alert("由于我还是一名在校高中生，因为学业压力繁重，因此CodeCat工作室暂停运营,我们向您深表歉意(恢复运营时间可能在寒暑假,或者高考后)");
-function loop() {
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>CodeCat工作室网页</title>
+    <style type="text/css">
+      /* CSS Document */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+      }
+
+      .clearfix {
+        *zoom: 1;
+      }
+
+      body {
+        background: url(picture/blackground.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .content {
+        max-width: 90%;
+        margin: 5% auto;
+        border-radius: 10px;
+        background-color: rgba(236, 236, 236, 0.59);
+        transition: all 1.0s;
+        /*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content img {
+        width: 40%;
+        height: auto;
+        margin: 10% 0;
+        border-radius: 50%;
+      }
+
+      .content:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+      }
+
+      .content_r {
+        width: 90%;
+        margin: 5% auto;
+        /*	background-color: pink;*/
+      }
+
+      .content_l {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .content_l h2 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+      }
+
+      .cc {
+        margin-top: 10px;
+        color: #1F2023;
+        font-size: 1rem;
+      }
+
+      .color_1 {
+        color: #4855EC;
+        font-size: 1rem;
+      }
+
+      .deeppink {
+        color: deeppink;
+      }
+
+      .link {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .link a {
+        display: block;
+        width: 25%;
+        height: 45px;
+        margin: 5px 5px 0 0;
+        /*	padding: 0 15px;*/
+        color: #fff;
+        line-height: 45px;
+        transition: all 0.8s;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .link a:hover {
+        background-color: rgba(0, 201, 243, 0.35);
+      }
+
+      .deeppink_1 {
+        background-color: deeppink;
+      }
+
+      .dodgerblue {
+        background-color: dodgerblue;
+      }
+
+      .magenta {
+        background-color: magenta;
+      }
+
+      .orange {
+        background-color: orange;
+      }
+
+      /* media queries for smaller screens */
+      @media (max-width: 768px) {
+        .content img {
+          width: 60%;
+        }
+
+        .content_r {
+          width: 100%;
+        }
+
+        .link a {
+          width: 40%;
+        }
+      }
+
+      /* media queries for even smaller screens */
+      @media (max-width: 480px) {
+        .content img {
+          width: 80%;
+        }
+
+        .link a {
+          width: 80%;
+        }
+      }
+    </style>
+    <script>
+    function loop() {
         var i, n, s = '';
 
         for (i = 0; i < 10; i++) {
@@ -20,158 +175,30 @@ function loop() {
         setTimeout(loop, 50);
     }
 
-    loop();</script>
-<style type="text/css">
-			/* CSS Document */
-			* {
-				margin: 0;
-				padding: 0;
-			}
+    loop();
+    </script>
+  </head>
 
-			a {
-				text-decoration: none;
-			}
-
-			.clearfix:after {
-				content: "";
-				display: block;
-				height: 0;
-				visibility: hidden;
-				clear: both;
-			}
-
-			.clearfix {
-				*zoom: 1;
-			}
-
-			body {
-				background: url(picture/blackground.jpg) no-repeat;
-				background-size: cover;
-				background-attachment: fixed;
-			}
-
-			.content {
-				width: 900px;
-				height: 500px;
-				margin: 200px auto 0 auto;
-				border-radius: 10px;
-				background-color: rgba(236, 236, 236, 0.59);
-				transition: all 1.0s;
-				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
-			}
-
-			.content img {
-				float: left;
-				width: 200px;
-				height: 200px;
-				margin: 150px 0 0 80px;
-				border-radius: 100px;
-
-			}
-
-			.content:hover {
-				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
-			}
-
-			.content_r {
-				float: right;
-				width: 500px;
-				margin: 80px 60px 0 0;
-				/*	background-color: pink;*/
-			}
-
-			.content_l {
-				float: left;
-				width: 100%;
-				text-align: center;
-			}
-
-			.content_l h5 {
-
-				font-size: 17px;
-			}
-
-			.cc {
-				margin-top: 10px;
-				color: #1F2023;
-				font-size: 18px;
-			}
-
-			.color_1 {
-				color: #4855EC;
-				font-size: 18px;
-			}
-
-			.deeppink {
-				color: deeppink;
-			}
-
-			.link {
-				margin-top: 30px;
-			}
-
-			.link a {
-				display: block;
-				float: left;
-				width: 120px;
-				height: 45px;
-				margin: 5px 5px 0 0;
-				/*	padding: 0 15px;*/
-				color: #fff;
-				line-height: 45px;
-				transition: all 0.8s;
-				/*	background-color: deeppink;*/
-
-			}
-
-			.link a:hover {
-				background-color: rgba(0, 201, 243, 0.35);
-			}
-
-			.deeppink_1 {
-				background-color: deeppink;
-			}
-
-			.dodgerblue {
-				background-color: dodgerblue;
-			}
-
-			.magenta {
-				background-color: magenta;
-			}
-
-			.orange {
-				background-color: orange;
-			}
-		</style>
-	</head>
-
-	<body>
-             <audio autoplay="autoplay" loop>
-<source src="media/1.mp3" type="audio/mpeg">
-              </audio>
-		<div class="content">
-			<img src="picture/first.jpg" alt="">
-			<div class="content_r clearfix">
-				<div class="content_l clearfix">
-					<h2>Hi~ CodeCat工作室， Welcome here ！</h2>
-					<p class="cc">欢迎来到我的主页，一位热爱编程的小渣渣~</p>
-					<p class="cc">爱好计算机，会去自学一些感兴趣的东西 !</p>
-					<br>
-					<p class="color_1">I am an ambitious salted fish!</p>
-					<p class="color_1">我是一位有野心的咸鱼!</p>
-					<br>
-					<p class="deeppink">只要路是对的，就不怕路远。</p>
-					<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
-					<div class="link">
-						<a href="gzsgw.html" class="dodgerblue" target="_blank">官网</a>
-						<a href="https://qm.qq.com/cgi-bin/qm/qr?k=1oClZRrFcVS8YaR7ylrsJIMhJlXIIc_w&authKey=ueJhnDCCzbjYzdakrvC8iAcaC4H1C/ATaoRYGjEL+CgmRHmB70palIPnz6u1zUHI&noverify=0&personal_qrcode_source=0" class="deeppink_1" target="_blank">QQ群</a>
-						<a href="https://b23.tv/QCEYJYl" class="magenta" target="_blank">个人b站</a>
-						<a href="https://site-1022711-2782-7961.mysxl.cn/" class="orange" target="_blank">关于他</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-
+  <body>
+    <audio autoplay="autoplay" loop>
+      <source src="media/1.mp3" type="audio/mpeg">
+    </audio>
+    <div class="content">
+      <img src="picture/first.jpg" alt="">
+      <div class="content_r clearfix">
+        <div class="content_l clearfix">
+          <h2>Hi~ CodeCat工作室， Welcome here ！</h2>
+          <p class="cc">欢迎来到我的主页，一位热爱编程的小渣渣~</p>
+          <p class="cc">爱好计算机科学，热爱编程，喜欢探索新技术，希望能够在这里与大家交流，共同进步。</p>
+          <p class="cc">如果你有什么问题或建议，可以通过以下链接联系我，期待与你的交流！</p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/CodeCat-github" class="deeppink_1">Github</a>
+          <a href="https://blog.csdn.net/Weixin_50165109" class="dodgerblue">CSDN博客</a>
+          <a href="https://www.zhihu.com/people/codecat-91-2" class="magenta">知乎</a>
+          <a href="mailto:123456789@qq.com" class="orange">联系我</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
